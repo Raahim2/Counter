@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PyQuiz</string>
+    <string name="basic_python">Basic Python</string>
+    <string name="python_for_ds">Python For Data Science</string>
+    <string name="python_for_dv">Python For Data Visualization</string>
+    <string name="python_for_ml">Python For Machine Learning</string>
+    <string name="advance_python">Python For Web Dev</string>
+
+
+</resources>

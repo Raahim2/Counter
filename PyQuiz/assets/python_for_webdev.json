@@ -1,0 +1,30 @@
+{
+    "questions": [
+      {
+        "question": "Which Python framework is commonly used for building web applications with an emphasis on rapid development and clean, pragmatic design?",
+        "options": ["Django", "Flask", "Pyramid", "Bottle"],
+        "correct_answer": "Django"
+      },
+      {
+        "question": "In Django, what is the purpose of a 'migration'?",
+        "options": ["Creating database tables", "Defining URL patterns", "Handling user authentication", "Deploying the application"],
+        "correct_answer": "Creating database tables"
+      },
+      {
+        "question": "Which of the following is a micro web framework for Python based on Werkzeug and Jinja2?",
+        "options": ["Django", "Flask", "Pyramid", "Bottle"],
+        "correct_answer": "Flask"
+      },
+      {
+        "question": "In Flask, how do you define a route that responds to HTTP GET requests to the root URL ('/')?",
+        "options": ["@app.route('/')", "@route('/')", "@app.route('/', method='GET')", "@app.get('/')"],
+        "correct_answer": "@app.route('/')"
+      },
+      {
+        "question": "What does the term 'ORM' stand for in the context of Django and Flask?",
+        "options": ["Object-Relational Mapping", "Object-Request Model", "Object-Resource Mapping", "Object-Request Mapping"],
+        "correct_answer": "Object-Relational Mapping"
+      }
+    ]
+  }
+  

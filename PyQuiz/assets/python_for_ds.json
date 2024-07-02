@@ -1,0 +1,104 @@
+{
+  "questions": [
+    {
+      "question": "What is the result of the following NumPy operation?\nimport numpy as np\narr = np.array([1, 2, 3, 4, 5])\nprint(arr[2])",
+      "options": ["3", "2", "4", "5"],
+      "correct_answer": "3"
+    },
+    {
+      "question": "Which function in Pandas is used to read CSV files?",
+      "options": ["read_csv()", "load_csv()", "read_file()", "import_csv()"],
+      "correct_answer": "read_csv()"
+    },
+    {
+      "question": "In NumPy, how do you create an identity matrix of size 3x3?",
+      "options": ["np.eye(3)", "np.identity(3)", "np.zeros((3, 3))", "np.ones((3, 3))"],
+      "correct_answer": "np.identity(3)"
+    },
+    {
+      "question": "What does the Pandas function df.describe() provide?",
+      "options": ["Statistical summary of the DataFrame", "List of columns in the DataFrame", "Information about missing values", "Sample of the DataFrame"],
+      "correct_answer": "Statistical summary of the DataFrame"
+    },
+    {
+      "question": "How can you select rows from a Pandas DataFrame based on a condition?",
+      "options": ["df.filter(condition)", "df.select(condition)", "df[condition]", "df.query(condition)"],
+      "correct_answer": "df[condition]"
+    },
+    {
+      "question": "What is the primary data structure used in NumPy?",
+      "options": ["DataFrame", "Series", "ndarray", "list"],
+      "correct_answer": "ndarray"
+    },
+    {
+      "question": "How do you import the NumPy library in Python?",
+      "options": ["import numpy", "import numpy as np", "import np", "include numpy"],
+      "correct_answer": "import numpy as np"
+    },
+    {
+      "question": "What function would you use to create a Pandas DataFrame from a dictionary?",
+      "options": ["pd.Series()", "pd.DataFrame()", "pd.dict()", "pd.array()"],
+      "correct_answer": "pd.DataFrame()"
+    },
+    {
+      "question": "Which method is used to read a CSV file into a Pandas DataFrame?",
+      "options": ["pd.read_csv()", "pd.read_table()", "pd.read_excel()", "pd.read_json()"],
+      "correct_answer": "pd.read_csv()"
+    },
+    {
+      "question": "How do you get the shape (number of rows and columns) of a Pandas DataFrame 'df'?",
+      "options": ["df.shape()", "df.shape", "shape(df)", "df.size()"],
+      "correct_answer": "df.shape"
+    },
+    {
+      "question": "What does the 'axis' parameter control in NumPy functions like np.sum()?",
+      "options": ["The dimension along which the operation is performed", "The data type of the elements", "The number of elements to include", "The precision of the calculation"],
+      "correct_answer": "The dimension along which the operation is performed"
+    },
+    {
+      "question": "How do you select a column named 'age' from a Pandas DataFrame 'df'?",
+      "options": ["df['age']", "df.age", "df['age']", "All of the above"],
+      "correct_answer": "All of the above"
+    },
+    {
+      "question": "Which method would you use to calculate the mean of a NumPy array 'arr'?",
+      "options": ["arr.mean()", "np.mean(arr)", "mean(arr)", "Both arr.mean() and np.mean(arr)"],
+      "correct_answer": "Both arr.mean() and np.mean(arr)"
+    },
+    {
+      "question": "What function would you use to create a NumPy array of zeros with shape (3, 4)?",
+      "options": ["np.zeros((3, 4))", "np.zeros([3, 4])", "np.zeros(3, 4)", "np.zero((3, 4))"],
+      "correct_answer": "np.zeros((3, 4))"
+    },
+    {
+      "question": "Which method is used to remove missing values from a Pandas DataFrame 'df'?",
+      "options": ["df.dropna()", "df.remove_na()", "df.na.drop()", "df.drop()"],
+      "correct_answer": "df.dropna()"
+    },
+    {
+      "question": "How do you calculate the standard deviation of a Pandas DataFrame column 'col'?",
+      "options": ["df.col.std()", "df['col'].std()", "df.col.standard_deviation()", "df['col'].standard_deviation()"],
+      "correct_answer": "df['col'].std()"
+    },
+    {
+      "question": "What function would you use to concatenate two NumPy arrays 'a' and 'b' along the first axis?",
+      "options": ["np.concatenate((a, b), axis=0)", "np.vstack((a, b))", "np.hstack((a, b))", "np.append((a, b), axis=0)"],
+      "correct_answer": "np.concatenate((a, b), axis=0)"
+    },
+    {
+      "question": "Which method is used to generate descriptive statistics of a Pandas DataFrame 'df'?",
+      "options": ["df.describe()", "df.statistics()", "df.summary()", "df.stats()"],
+      "correct_answer": "df.describe()"
+    },
+    {
+      "question": "How do you access the first 5 rows of a Pandas DataFrame 'df'?",
+      "options": ["df.head(5)", "df.tail(5)", "df.first(5)", "df.rows(5)"],
+      "correct_answer": "df.head(5)"
+    },
+    {
+      "question": "What does the method 'df.groupby()' do in Pandas?",
+      "options": ["Groups DataFrame using a mapper or by a Series of columns", "Sorts the DataFrame", "Filters the DataFrame", "Merges two DataFrames"],
+      "correct_answer": "Groups DataFrame using a mapper or by a Series of columns"
+    }
+  ]
+}

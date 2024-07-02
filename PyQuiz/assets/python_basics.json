@@ -1,0 +1,106 @@
+{
+  "questions": [
+    {
+      "question": "What is the output of the following Python code?\nprint(10 // 3)",
+      "options": ["3", "3.33", "4", "2"],
+      "correct_answer": "3"
+    },
+    {
+      "question": "Which of the following is NOT a keyword in Python?",
+      "options": ["if", "else", "while", "loop"],
+      "correct_answer": "loop"
+    },
+    {
+      "question": "What will be the type of variable 'x' after executing 'x = [1, 2, 3]' in Python?",
+      "options": ["list", "tuple", "set", "dict"],
+      "correct_answer": "list"
+    },
+    {
+      "question": "How do you start a comment in Python?",
+      "options": ["// This is a comment", "# This is a comment", "/* This is a comment */", "<!-- This is a comment -->"],
+      "correct_answer": "# This is a comment"
+    },
+    {
+      "question": "What is the result of '4 ** 2' in Python?",
+      "options": ["8", "16", "2", "4"],
+      "correct_answer": "16"
+    },
+    {
+      "question": "Which of the following functions can be used to get the length of a list in Python?",
+      "options": ["size()", "length()", "count()", "len()"],
+      "correct_answer": "len()"
+    },
+    {
+      "question": "Which of the following data types is immutable in Python?",
+      "options": ["list", "dict", "set", "tuple"],
+      "correct_answer": "tuple"
+    },
+    {
+      "question": "How do you create a dictionary in Python?",
+      "options": ["dict = {key1: value1, key2: value2}", "dict = [key1: value1, key2: value2]", "dict = (key1: value1, key2: value2)", "dict = <key1: value1, key2: value2>"],
+      "correct_answer": "dict = {key1: value1, key2: value2}"
+    },
+    {
+      "question": "What is the output of 'len('Hello')'?",
+      "options": ["4", "5", "6", "None"],
+      "correct_answer": "5"
+    },
+    {
+      "question": "How do you check if a key exists in a dictionary in Python?",
+      "options": ["key in dict", "key exists in dict", "if key in dict", "dict.contains(key)"],
+      "correct_answer": "key in dict"
+    },
+    {
+      "question": "Which of the following methods can be used to add an element to the end of a list in Python?",
+      "options": ["add()", "append()", "insert()", "push()"],
+      "correct_answer": "append()"
+    },
+    {
+      "question": "How do you handle exceptions in Python?",
+      "options": ["try/except", "catch/except", "try/catch", "error/catch"],
+      "correct_answer": "try/except"
+    },
+    {
+      "question": "What will be the value of 'result' after the following code executes?\nresult = 3 * 1 ** 3",
+      "options": ["3", "9", "1", "27"],
+      "correct_answer": "3"
+    },
+    {
+      "question": "How do you create a set in Python?",
+      "options": ["set = {}", "set = []", "set = ()", "set = set()"],
+      "correct_answer": "set = set()"
+    },
+    {
+      "question": "Which of the following is a correct syntax to import a module named 'math' in Python?",
+      "options": ["import math", "include math", "using math", "require math"],
+      "correct_answer": "import math"
+    },
+    {
+      "question": "What is the output of the following Python code?\nprint(2 + 2 * 3)",
+      "options": ["8", "10", "6", "12"],
+      "correct_answer": "8"
+    },
+    {
+      "question": "Which of the following is NOT a valid variable name in Python?",
+      "options": ["my_variable", "2nd_variable", "_variable", "variable_2"],
+      "correct_answer": "2nd_variable"
+    },
+    {
+      "question": "What will be the type of variable 'x' after executing 'x = 5.0 / 2' in Python?",
+      "options": ["int", "float", "str", "bool"],
+      "correct_answer": "float"
+    },
+    {
+      "question": "How do you define a function in Python?",
+      "options": ["function myFunction():", "def myFunction():", "define myFunction():", "func myFunction():"],
+      "correct_answer": "def myFunction():"
+    },
+    {
+      "question": "What is the result of 'str1 + str2' where str1 = 'Hello' and str2 = 'World'?",
+      "options": ["Hello World", "HelloWorld", "WorldHello", "Helloworld"],
+      "correct_answer": "HelloWorld"
+    }
+  ]
+}
+
+  
