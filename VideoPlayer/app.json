@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "VideoPlayer",
+    "slug": "VideoPlayer",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/imagen3.jpg",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/imagen3.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/imagen3.jpg",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.raahim2.VideoPlayer"
+    },
+    "web": {
+      "favicon": "./assets/imagen3.jpg"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "611ed17b-809b-461d-9b2f-34debfa773c8"
+      }
+    }
+  }
+}
