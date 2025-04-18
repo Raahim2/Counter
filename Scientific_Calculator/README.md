@@ -1,6 +1,7 @@
 # Scientific Calculator
 
 ✔ Download the app now!
+SCAN
 
 ```
 ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
