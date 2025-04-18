@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">StatTube</string>
+    <string name="like_per_views">Like Per Views</string>
+    <string name="comment_per_views">Comment Per Views</string>
+    <string name="engagement_rate">Engagement Rate</string>
+
+    <string name="Average_View_Test">Average View Test</string>
+    <string name="Video_Like_Test">Video Like Test</string>
+    <string name="Video_Comment_Test">Video Comment Test</string>
+    <string name="Subscribers_VS_View_Test">Subscribers VS View Test</string>
+    <string name="Engagement_Rate_Test">Engagement Rate Test</string>
+    <string name="Grand_Total">Grand Total</string>
+
+    <string name="Total_views">Total Views</string>
+    <string name="Total_videos">Total Videos</string>
+    <string name="Avg_views">Average Views</string>
+    <string name="Avg_sub">Average Subscribers</string>
+    <string name="view_per_sub">Views Per Subscribers</string>
+    <string name="age">Channel Age</string>
+    <string name="view_per_day">Views Per Day</string>
+    <string name="sub_per_day">Subscribers Per Day</string>
+    <string name="vid_upload_day">Average Uploads in day</string>
+    <string name="impression">Impression</string>
+
+
+</resources>

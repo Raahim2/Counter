@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "question": "Which library in Python is commonly used for creating static, animated, and interactive visualizations?",
+      "options": ["Matplotlib", "Seaborn", "Plotly", "Bokeh"],
+      "correct_answer": "Matplotlib"
+    },
+    {
+      "question": "What does the following Matplotlib function do?\nimport matplotlib.pyplot as plt\nplt.scatter(x, y)",
+      "options": ["Creates a scatter plot", "Plots a line chart", "Displays a histogram", "Generates a bar chart"],
+      "correct_answer": "Creates a scatter plot"
+    },
+    {
+      "question": "Which Seaborn function is used to visualize the relationship between two numeric variables?",
+      "options": ["heatmap()", "pairplot()", "scatterplot()", "lineplot()"],
+      "correct_answer": "scatterplot()"
+    },
+    {
+      "question": "In Matplotlib, how do you add a title to a plot?",
+      "options": ["plt.title()", "plt.set_title()", "plt.add_title()", "plt.plot_title()"],
+      "correct_answer": "plt.title()"
+    },
+    {
+      "question": "What is the purpose of the following Seaborn function?\nimport seaborn as sns\nsns.histplot(data=df, x='column_name')",
+      "options": ["Creates a histogram", "Generates a density plot", "Displays a boxplot", "Plots a bar chart"],
+      "correct_answer": "Creates a histogram"
+    }
+  ]
+}
