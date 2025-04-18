@@ -1,0 +1,53 @@
+<!-- res/drawable/circular_progress.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background Circle -->
+    <item>
+        <shape
+            android:shape="ring"
+            android:innerRadiusRatio="3"
+            android:thicknessRatio="10"
+            android:useLevel="false">
+            <solid android:color="#FFEEEEEE" />
+        </shape>
+    </item>
+
+    <!-- Progress Circle -->
+    <item>
+        <rotate
+            android:fromDegrees="270"
+            android:toDegrees="270">
+            <shape
+                android:shape="ring"
+                android:innerRadiusRatio="3"
+                android:thicknessRatio="10"
+                android:useLevel="true">
+
+
+                <gradient
+                    android:type="sweep"
+                    android:angle="0"
+                    android:startColor="#FF0000"
+                    android:centerColor="#FFA500"
+                    android:endColor="#4CAF50"
+                    android:useLevel="true"/>
+            </shape>
+        </rotate>
+    </item>
+
+    <!-- Glowy Effect -->
+    <item>
+        <shape
+            android:shape="ring"
+            android:innerRadiusRatio="3"
+            android:thicknessRatio="10"
+            android:useLevel="false">
+            <solid android:color="#FF0000" />
+            <gradient
+                android:startColor="#FF0000"
+                android:endColor="#00FF0000"
+                android:type="radial"
+                android:gradientRadius="30" />
+        </shape>
+    </item>
+</layer-list>
