@@ -7,6 +7,8 @@ We want to thank all of the wonderful people who have contributed to this projec
 ## Contributors
 
 - [Raahim2](https://github.com/Raahim2) - Added new Android apps and improved documentation.
+- [NorzOman2](https://github.com/NorzOman2) -Video Player App
+
 
 
 ---
