@@ -1,27 +1,50 @@
-# App Collection Repository 📱💻
+# Welcome to your Expo app 👋
 
-Welcome to my app collection repository! This repo contains a variety of projects built using different technologies including **React Native**, **Kotlin with Jetpack Compose**, **Java**, and more. Each folder represents an individual app — feel free to explore, learn, and get inspired!
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
----
+## Get started
 
-## 🚀 Apps Included
+1. Install dependencies
 
-| App Name           | Description                                             | Tech Stack                |
-|--------------------|---------------------------------------------------------|---------------------------|
-| **CallWhisper**     | Audio recorder app with advanced features              | React Native + AssemblyAI             |
-| **Counter**         | Simple counter application                             | React Native              |
-| **ExpenseManager**  | Track and manage expenses                              | Java + AnyChart                      |
-| **Forms**           | App like Google form                                   |  React Native                        |
-| **Password Generater** | Generate strong random passwords                    |  Java                      |
-| **PicsAI**          | AI-powered chat and image app                          | React Native + Gemini              |
-| **PyQuiz**          | Quiz app built using Python                            | Java                        |
-| **Scientific_Calculator** | A calculator with scientific functionalities     | React Native                        |
-| **Speedometer**     | Real-time speedometer using device sensors             | Kotlin + Jetpack Compose  |
-| **StatsTube**       | YouTube channel analytics viewer                       | Java + YT API                         |
-| **SuperMeals**      | Food and meal planning app                             | React Native                         |
-| **Timer**           | Timer utility app                                      | Java                        |
-| **VideoPlayer**     | App to play local and network videos                   |  React Native                             |
-| **Weather**         | Weather forecast and live updates app                  | React Native                                  |
+   ```bash
+   npm install
+   ```
 
----
+2. Start the app
 
+   ```bash
+    npx expo start
+   ```
+
+In the output, you'll find options to open the app in a
+
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+
+## Get a fresh project
+
+When you're ready, run:
+
+```bash
+npm run reset-project
+```
+
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+
+## Learn more
+
+To learn more about developing your project with Expo, look at the following resources:
+
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+
+## Join the community
+
+Join our community of developers creating universal apps.
+
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
