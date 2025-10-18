@@ -1,17 +1,17 @@
-import 'react-native-reanimated';
 import { Vibration } from 'react-native';
 import { TouchableWithoutFeedback , Text} from 'react-native';
 import React, { useState, useEffect } from 'react';
 import {View, StyleSheet,  Alert} from 'react-native';
-import CircularCounter from '../components/counter';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { StatusBar } from 'react-native';
-import BottomNav from '@/components/bottomnav';
-import EditCounter from '@/components/editcountermodal';
-import CreateCounterModal from '@/components/createcountermodal';
-import Sidebar from '@/components/sidebar';
-import Header from '@/components/header';
-import Timer from '@/components/timer';
+
+import CircularCounter from './components/counter';
+import BottomNav from './components/bottomnav';
+import EditCounter from './components/editcountermodal';
+import CreateCounterModal from './components/createcountermodal';
+import Sidebar from './components/sidebar';
+import Header from './components/header';
+import Timer from './components/timer';
 
 interface CounterState {
   id: string;

@@ -5,9 +5,13 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/logo.jpg",
-    "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/logo.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
     "ios": {
       "supportsTablet": true
     },
@@ -16,35 +20,10 @@
         "foregroundImage": "./assets/images/logo.jpg",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.raahim2.Counter"
+      "edgeToEdgeEnabled": true
     },
     "web": {
-      "bundler": "metro",
-      "output": "static",
       "favicon": "./assets/images/logo.jpg"
-    },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/logo.jpg",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ]
-    ],
-    "experiments": {
-      "typedRoutes": true
-    },
-    "extra": {
-      "router": {
-        "origin": false
-      },
-      "eas": {
-        "projectId": "fc1d1126-4df8-4add-9e8f-1adb5810c9c0"
-      }
     }
   }
 }
