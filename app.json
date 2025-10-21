@@ -2,7 +2,7 @@
   "expo": {
     "name": "Counter",
     "slug": "Counter",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/images/logo.jpg",
     "userInterfaceStyle": "light",
@@ -10,7 +10,7 @@
     "splash": {
       "image": "./assets/images/logo.jpg",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000000"
     },
     "ios": {
       "supportsTablet": true
@@ -18,12 +18,18 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/logo.jpg",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#000000"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.raahim2.Counter"
     },
     "web": {
       "favicon": "./assets/images/logo.jpg"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1a790bff-c6bb-473f-9e6b-c3d50cc88ea1"
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "counter",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "index.js",
   "scripts": {
     "start": "expo start",
@@ -12,9 +12,11 @@
     "@react-native-async-storage/async-storage": "^2.2.0",
     "@react-native-community/slider": "^5.0.1",
     "expo": "~54.0.13",
+    "expo-navigation-bar": "~5.0.8",
     "expo-status-bar": "~3.0.8",
     "react": "19.1.0",
     "react-native": "0.81.4",
+    "react-native-safe-area-context": "^5.6.1",
     "react-native-svg": "^15.14.0"
   },
   "private": true,

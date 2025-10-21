@@ -3,7 +3,8 @@ import { TouchableWithoutFeedback , Text} from 'react-native';
 import React, { useState, useEffect } from 'react';
 import {View, StyleSheet,  Alert} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { StatusBar } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import CircularCounter from './components/counter';
 import BottomNav from './components/bottomnav';
@@ -12,7 +13,7 @@ import CreateCounterModal from './components/createcountermodal';
 import Sidebar from './components/sidebar';
 import Header from './components/header';
 import Timer from './components/timer';
-
+// npx eas build -p android --profile production
 interface CounterState {
   id: string;
   count: number;
@@ -221,44 +222,54 @@ export default function RootLayout() {
   };
 
   return (
-    <TouchableWithoutFeedback onPress={increaseCount}>
-      <View style={[styles.container, { backgroundColor: currentTheme.bg }]}>
-        <StatusBar backgroundColor={currentTheme.bg} barStyle={currentTheme.bg === '#FFFFFF' ? 'dark-content' : 'light-content'} />
-        
-        {/* Header */}
-        <Header
-          currentTheme={currentTheme}
-          activeCounter={activeCounter}
-          setShowSidebar={setShowSidebar} 
-        />
-    
 
-  
-        {/* Counter Display */}
-        {activeCounter && (
-          <>
-            {/* Timer */} 
-            <Timer 
-              isRunning={isRunning}
-              setIsRunning={setIsRunning} 
-              bgColor={currentTheme.bg}
-              textColor={currentTheme.text}
-              seconds={seconds}
-              setSeconds={setSeconds}
-            />
-                        
-            <CircularCounter
-              textClr={currentTheme.text}
-              bgClr={currentTheme.bg}
-              glow={true}
-              count={activeCounter.count}
-              lapLimit={activeCounter.lapLimit}
-              
-            />
-          </>
-        )}
-  
-        {/* Sidebar */}
+    <SafeAreaView style={{flex:1}}>
+      <StatusBar translucent backgroundColor={currentTheme.bg} style="light"  />
+
+      <View style={[styles.container, { backgroundColor: currentTheme.bg }]}>
+        <Header currentTheme={currentTheme} activeCounter={activeCounter} setShowSidebar={setShowSidebar} />
+
+          <TouchableWithoutFeedback onPress={increaseCount}>
+            <View>
+              {activeCounter ? (
+                <>
+                <View style={{ alignItems: 'center', marginBottom: 20 }}>
+                  <Timer 
+                    isRunning={isRunning}
+                    setIsRunning={setIsRunning} 
+                    bgColor={currentTheme.bg}
+                    textColor={currentTheme.text}
+                    seconds={seconds}
+                    setSeconds={setSeconds}
+                />
+                </View>
+                
+
+                <CircularCounter
+                  textClr={currentTheme.text}
+                  bgClr={currentTheme.bg}
+                  glow={true}
+                  count={activeCounter.count}
+                  lapLimit={activeCounter.lapLimit}
+                />
+
+                <View style={styles.bottomInfo}>
+                  <Text style={[styles.lapText, { color: currentTheme.text }]}>
+                    Laps: {Math.floor((activeCounter.count - 1) / activeCounter.lapLimit) + 1}
+                  </Text>
+                  <Text style={[styles.lapText, { color: currentTheme.text }]}>
+                    {((activeCounter.count - 1) % activeCounter.lapLimit) + 1}/{activeCounter.lapLimit}
+                  </Text>
+                </View>
+                </>
+                
+               ) : (
+                <Text style={{ color: currentTheme.text, fontSize: 20 }}>No active counter. Please create one.</Text>
+              )}
+            </View>
+          </TouchableWithoutFeedback>
+
+          {/* Sidebar */}
         <Sidebar
           showSidebar={showSidebar}
           setShowSidebar={setShowSidebar}
@@ -267,7 +278,6 @@ export default function RootLayout() {
           handleSelectCounter={handleSelectCounter}
           bgColor={currentTheme.bg}
           textColor={currentTheme.text}
-          
         />  
   
         {/* Create Counter Modal */}
@@ -293,32 +303,23 @@ export default function RootLayout() {
           bgColor={currentTheme.bg}
           textColor={currentTheme.text}
         />
-  
-        {/* Bottom Info Bar */}
-        {activeCounter && (
-          <View style={styles.bottomInfo}>
-            <Text style={[styles.lapText, { color: currentTheme.text }]}>
-              Laps: {Math.floor((activeCounter.count - 1) / activeCounter.lapLimit) + 1}
-            </Text>
-            <Text style={[styles.lapText, { color: currentTheme.text }]}>
-              {((activeCounter.count - 1) % activeCounter.lapLimit) + 1}/{activeCounter.lapLimit}
-            </Text>
-          </View>
-        )}
-  
-        {/* Bottom Nav */}
-        <BottomNav
-          decreaseCount={decreaseCount}
-          resetCount={resetCount}
-          handleEditCounter={handleEditCounter}
-          toggleTheme={toggleTheme}
-          currentTheme={currentTheme}
-          vibrationEnabled={vibrationEnabled}
-          setVibrationEnabled={setVibrationEnabled}
-        />
-  
+
+          <BottomNav
+            decreaseCount={decreaseCount}
+            resetCount={resetCount}
+            handleEditCounter={handleEditCounter}
+            toggleTheme={toggleTheme}
+            currentTheme={currentTheme}
+            vibrationEnabled={vibrationEnabled}
+            setVibrationEnabled={setVibrationEnabled}
+          />
       </View>
-    </TouchableWithoutFeedback>
+
+
+    
+    
+     </SafeAreaView>
+
   );
 }
 
